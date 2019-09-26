@@ -1,0 +1,192 @@
+
+
+footer{
+  background-color: @bg-c2-a;
+  height:350px;
+
+  nav a{
+    text-decoration: none;
+    color: @font-light;
+  }
+
+  @media @mobile{
+    height: auto;
+  }
+
+  h3{
+    font-size: 1.7rem;
+  }
+  .flex(center, center, row, wrap);
+
+  .footer-container{
+    .flex(center,flex-start, row, wrap);
+
+  .footer-window{
+    .flex(center, center, row, nowrap);
+    width: 100%;
+    margin-top: 50px;
+
+    @media @800{
+      .flex(center, center, row, wrap);
+    }
+
+    .logo{
+      margin: 0 2%;
+
+      @media @1000{
+        margin: 0 1%;
+      }
+
+      @media @800{
+        display:none;
+      }
+    }
+
+    .links{
+      width:20%;
+      //height:200px;
+      margin: 5px 2%;
+
+      nav a{
+        margin: 5px 0;
+      }
+
+      @media @1000{
+        margin: 5px 1%;
+
+        @media @mobile{
+          display: none;
+        }
+      }
+    }
+
+    .about{
+      width:20%;
+      margin: 5px 2%;
+      position: relative;
+      top: -23px;
+
+      nav a{
+        margin: 5px 0;
+      }
+
+      @media @1000{
+        margin: 5px 1%;
+
+        @media @mobile{
+          display: none;
+        }
+      }
+    }
+
+    .resources{
+      width:20%;
+      margin: 5px 2%;
+      position: relative;
+      top: -16px;
+
+      nav a{
+        margin: 5px 0;
+      }
+
+      @media @1000{
+        margin: 5px 1%;
+
+        @media @mobile{
+          display: none;
+        }
+      }
+    }
+
+  }
+  .social-media{
+
+    @media @mobile{
+      margin-top: 30px;
+    }
+
+
+    .social-link{
+      height: 40px;
+      width: 40px;
+    }
+
+
+    .social-app{
+      img{
+        width: 140px;
+        height: 45px;
+      }
+
+    }
+
+    nav{
+      .flex(center, center, row, nowrap);
+
+      a{
+        margin: 5px .5%;
+
+
+        }
+      }
+    }
+  }
+}
+
+
+  div{
+    //width:20%;
+    &.terms{
+      width:80%;
+      .flex(center, center, row, nowrap);
+      margin-top: 80px;
+
+      @media @800{
+        margin-top: 15px;
+
+        @media @mobile{
+          .flex(center, center, column, nowrap);
+        }
+      }
+    }
+  }
+
+  nav{
+    .flex(center, center, column, nowrap);
+
+    &.terms{
+      .flex(center, center, row, nowrap);
+      width:100%;
+      a{
+        width:auto;
+        @media @mobile{
+          .flex(center, center, column, nowrap);
+          margin:15px 0;
+          font-size: 1.6rem;
+        }
+      }
+      p{
+        margin: 18px 5px;
+        font-size: 1.2rem;
+        padding: 0;
+
+        @media @800{
+          margin: 0 5px;
+          @media @mobile{
+
+            display:none;
+          }
+        }
+      }
+      @media @mobile{
+        .flex(center, center, column, nowrap);
+      }
+    }
+
+
+  }
+
+
+#footer-logo{
+  width: 150px;
+}

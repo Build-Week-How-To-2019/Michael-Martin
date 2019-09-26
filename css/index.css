@@ -900,11 +900,6 @@ section.content-row-show .window-container .window h3 {
     height: auto;
   }
 }
-@media (max-width: 800px) {
-  .content-row-why .window-container .window:first-of-type {
-    display: none;
-  }
-}
 .content-row-why .window-container .window:last-of-type {
   padding-bottom: 30px;
 }

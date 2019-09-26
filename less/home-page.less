@@ -1,4 +1,6 @@
-
+body{
+  background-color: var(--background-color-1);
+}
 /*header related styles after here*/
 header{
 
@@ -29,11 +31,12 @@ header{
   em {
     margin-left: 10px;
     font-size: .8rem;
+    color: var(--font-color-active);
   }
 
   @media @mobile{
     margin: 0;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--font-color-active);
     padding-top: 30px;
     width: 100%;
     .flex (center, center, column, nowrap);
@@ -43,6 +46,7 @@ header{
       margin-top: 10px;
       //margin-left: 20px;
       font-size: 1.2rem;
+
     }
   }
 
@@ -119,6 +123,7 @@ input:checked + .slider:before {
 section{
 
   height: 600px;
+  color: var(--font-color-active);
 
   @media @mobile{
     height:auto;
@@ -131,6 +136,7 @@ section{
     width: 100%;
     margin: 25px 0 0 0;
     padding-bottom: 30px;
+    background-color: var(--background-color-1);
 
     &#about{
       @media @mobile{
@@ -145,9 +151,10 @@ section{
     }
 
     &.alt{
-      background-color: @bg-c2-a;
+      background-color: var(--background-color-2);
       padding-top: 30px;
       height: 630px;
+      color: var(--font-color-active);
 
       @media @mobile{
         height:auto;
@@ -157,7 +164,7 @@ section{
 
     a{
       text-decoration: none;
-      color: @font-a;
+      color: var(--font-color-active);
       font-size: 1.5rem;
     }
 
@@ -234,7 +241,7 @@ section{
         height: 450px;
         margin:0;
         margin-top: 30px;
-        border: 1px solid @font-a;
+        border: 1px solid var(--font-color-active);
 
 
 
@@ -270,7 +277,7 @@ section{
         }
 
         img{
-          border-bottom: 1px solid @font-a;
+          border-bottom: 1px solid var(--font-color-active);
           width:100%;
           height:198px;
         }
@@ -322,7 +329,7 @@ section{
   }
 
   &.content-row-show{
-    background-color: @bg-c2-a;
+    background-color: var(--background-color-2);
     padding-top: 30px;
     height: 630px;
 
@@ -343,7 +350,7 @@ section{
       position: relative;
       left: 80%;
       text-decoration: none;
-      color: @font-a;
+      color: var(--font-color-active);
       font-size: 1.5rem;
     }
 
@@ -422,9 +429,10 @@ section{
 }
 
 &.content-row-why{
-  background-color: @bg-c2-a;
+  background-color: var(--background-color-2);
   padding-top: 30px;
   height: auto;
+  color: var(--font-color-active);
 
   @media @800{
     height: auto;
@@ -447,7 +455,7 @@ section{
     position: relative;
     left: 80%;
     text-decoration: none;
-    color: @font-a;
+    color: var(--font-color-active);
     font-size: 1.5rem;
   }
 
@@ -473,7 +481,7 @@ section{
         height: auto;
       }
 
-      
+
 
       &:last-of-type{
         padding-bottom: 30px;
@@ -526,11 +534,12 @@ section{
   margin: 25px 0 0 0;
   padding-bottom: 30px;
   height: auto;
+  color: var(--font-color-active);
 
 
   a{
     text-decoration: none;
-    color: @font-a;
+    color: var(--font-color-active);
     font-size: 1.5rem;
   }
 
@@ -572,7 +581,7 @@ section{
       height: 450px;
       margin: 0 2% 0 0;
       margin-top: 30px;
-      border: 1px solid @font-a;
+      border: 1px solid var(--font-color-active);
 
 
       p, h3 {
@@ -642,12 +651,15 @@ section{
 #show-window{
   margin: 0;
   height: 420px;
+  color: var(--font-color-active);
+
 
 }
 
 #about{
-  border-bottom: 2px solid @font-a;
+  border-bottom: 2px solid var(--font-color-active);
   height: 270px;
+  color: var(--font-color-active);
   div{
     .flex(space-between,center,row,wrap);
   }
@@ -662,7 +674,7 @@ section{
 
     @media @mobile{
       height:auto;
-      background-color: @bg-c2-l;
+      background-color: var(--background-color-2);
 
       div{
         width:96%;

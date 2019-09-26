@@ -2,22 +2,23 @@
 // Navigation Styles here
 .inside-nav{
   .flex (center, center, row, nowrap);
-  background-color: @bg-c-l;
+  background-color: var(--background-color-1);
   width: 100%;
+  color: var(--font-color-active);
 
   @media @1000{
     width:100%;
 
     @media @mobile{
       .flex(center, center, column, wrap);
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid var(--font-color-active);
       padding-bottom: 30px;
 
 
       .hidden-logo{
         .flex(center, center, column, wrap);
         width: 100%;
-        background-color: @bg-c2-l;
+        background-color: var(--background-color-2);
       }
       //a:first-of-type{
       //  width:100%;
@@ -31,13 +32,14 @@
     margin: 15px 5px;
     font-size: 1.10rem;
     text-decoration: none;
-    color: @font-light;
     font-weight:bold;
     width: 20%;
+    color: var(--font-color-active);
 
     &:last-of-type{
       @media @mobile{
-        background-color: @bg-c2-l;
+        background-color: var(--background-color-2);
+      //  border-top: 2px solid var(--font-color-active);
       }
     }
 
@@ -48,7 +50,7 @@
         width: 100%;
         margin: 0;
         font-size: 1.5rem;
-        border-top: 2px solid black;
+        border-top: 2px solid var(--font-color-active);
         padding-top: 30px;
         padding-bottom: 30px;
       //  border: 1px solid red;
@@ -79,8 +81,8 @@
 
   .search-bar{
 
-    background-color: @bg-c-d;
-    color: @font-dark;
+    background-color: var(--searchbar-bg);
+    color: var(--searchbar-f);
 
     @media @1000{
       width: 10%;

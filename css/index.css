@@ -1,3 +1,10 @@
+:root {
+  --background-color-1: white;
+  --background-color-2: #3d7e99;
+  --font-color-active: black;
+  --searchbar-bg: black;
+  --searchbar-f: #696e6d;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,8 +179,9 @@ img {
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  background-color: white;
+  background-color: var(--background-color-1);
   width: 100%;
+  color: var(--font-color-active);
 }
 @media (max-width: 1000px) {
   .inside-nav {
@@ -186,7 +194,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--font-color-active);
     padding-bottom: 30px;
   }
   .inside-nav .hidden-logo {
@@ -195,20 +203,20 @@ img {
     align-items: center;
     flex-flow: column wrap;
     width: 100%;
-    background-color: #3d7e99;
+    background-color: var(--background-color-2);
   }
 }
 .inside-nav nav a {
   margin: 15px 5px;
   font-size: 1.1rem;
   text-decoration: none;
-  color: black;
   font-weight: bold;
   width: 20%;
+  color: var(--font-color-active);
 }
 @media (max-width: 500px) {
   .inside-nav nav a:last-of-type {
-    background-color: #3d7e99;
+    background-color: var(--background-color-2);
   }
 }
 @media (max-width: 1000px) {
@@ -221,7 +229,7 @@ img {
     width: 100%;
     margin: 0;
     font-size: 1.5rem;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--font-color-active);
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
@@ -252,8 +260,8 @@ img {
   }
 }
 .inside-nav .search-bar {
-  background-color: #000000;
-  color: #696e6d;
+  background-color: var(--searchbar-bg);
+  color: var(--searchbar-f);
 }
 @media (max-width: 1000px) {
   .inside-nav .search-bar {
@@ -282,7 +290,8 @@ img {
   }
 }
 footer {
-  background-color: #3d7e99;
+  background-color: var(--background-color-2);
+  color: var(--font-color-active);
   height: 350px;
   display: flex;
   justify-content: center;
@@ -291,7 +300,7 @@ footer {
 }
 footer nav a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color-active);
 }
 @media (max-width: 500px) {
   footer {
@@ -486,6 +495,9 @@ nav.terms p {
 #footer-logo {
   width: 150px;
 }
+body {
+  background-color: var(--background-color-1);
+}
 /*header related styles after here*/
 header {
   width: 100%;
@@ -516,11 +528,12 @@ header .top-nav {
 .theme-switch-wrapper em {
   margin-left: 10px;
   font-size: 0.8rem;
+  color: var(--font-color-active);
 }
 @media (max-width: 500px) {
   .theme-switch-wrapper {
     margin: 0;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--font-color-active);
     padding-top: 30px;
     width: 100%;
     display: flex;
@@ -594,6 +607,7 @@ input:checked + .slider:before {
 /* main content styles go here */
 section {
   height: 600px;
+  color: var(--font-color-active);
 }
 @media (max-width: 500px) {
   section {
@@ -604,6 +618,7 @@ section.content-row {
   width: 100%;
   margin: 25px 0 0 0;
   padding-bottom: 30px;
+  background-color: var(--background-color-1);
 }
 @media (max-width: 500px) {
   section.content-row#about {
@@ -614,9 +629,10 @@ section.content-row:last-of-type {
   height: 470px;
 }
 section.content-row.alt {
-  background-color: #3d7e99;
+  background-color: var(--background-color-2);
   padding-top: 30px;
   height: 630px;
+  color: var(--font-color-active);
 }
 @media (max-width: 500px) {
   section.content-row.alt {
@@ -625,7 +641,7 @@ section.content-row.alt {
 }
 section.content-row a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color-active);
   font-size: 1.5rem;
 }
 section.content-row div {
@@ -701,7 +717,7 @@ section.content-row .window-container .window {
   height: 450px;
   margin: 0;
   margin-top: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--font-color-active);
 }
 section.content-row .window-container .window .window-stats {
   display: flex;
@@ -732,7 +748,7 @@ section.content-row .window-container .window h3 {
   font-size: 1.5rem;
 }
 section.content-row .window-container .window img {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--font-color-active);
   width: 100%;
   height: 198px;
 }
@@ -778,7 +794,7 @@ section.content-row .window-container .window:last-of-type {
   }
 }
 section.content-row-show {
-  background-color: #3d7e99;
+  background-color: var(--background-color-2);
   padding-top: 30px;
   height: 630px;
 }
@@ -796,7 +812,7 @@ section.content-row-show a {
   position: relative;
   left: 80%;
   text-decoration: none;
-  color: black;
+  color: var(--font-color-active);
   font-size: 1.5rem;
 }
 section.content-row-show .window-container {
@@ -858,9 +874,10 @@ section.content-row-show .window-container .window h3 {
   font-size: 1.5rem;
 }
 .content-row-why {
-  background-color: #3d7e99;
+  background-color: var(--background-color-2);
   padding-top: 30px;
   height: auto;
+  color: var(--font-color-active);
 }
 @media (max-width: 800px) {
   .content-row-why {
@@ -879,7 +896,7 @@ section.content-row-show .window-container .window h3 {
   position: relative;
   left: 80%;
   text-decoration: none;
-  color: black;
+  color: var(--font-color-active);
   font-size: 1.5rem;
 }
 .content-row-why .window-container {
@@ -940,10 +957,11 @@ section.content-row-show .window-container .window h3 {
   margin: 25px 0 0 0;
   padding-bottom: 30px;
   height: auto;
+  color: var(--font-color-active);
 }
 .content-row-team a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color-active);
   font-size: 1.5rem;
 }
 .content-row-team div {
@@ -984,7 +1002,7 @@ section.content-row-show .window-container .window h3 {
   height: 450px;
   margin: 0 2% 0 0;
   margin-top: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--font-color-active);
 }
 .content-row-team .window-container .window p,
 .content-row-team .window-container .window h3 {
@@ -1040,10 +1058,12 @@ section.content-row-show .window-container .window h3 {
 #show-window {
   margin: 0;
   height: 420px;
+  color: var(--font-color-active);
 }
 #about {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--font-color-active);
   height: 270px;
+  color: var(--font-color-active);
 }
 #about div {
   display: flex;
@@ -1062,7 +1082,7 @@ section.content-row-show .window-container .window h3 {
 @media (max-width: 800px) and (max-width: 500px) {
   #about {
     height: auto;
-    background-color: #3d7e99;
+    background-color: var(--background-color-2);
   }
   #about div {
     width: 96%;

@@ -4,6 +4,8 @@
   --font-color-active: black;
   --searchbar-bg: black;
   --searchbar-f: #696e6d;
+  --logo-dark: inline;
+  --logo-light: none;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -284,8 +286,19 @@ img {
     padding-bottom: 30px;
   }
 }
+#top-logo {
+  display: var(--logo-light);
+}
 @media (max-width: 500px) {
   #top-logo {
+    display: none;
+  }
+}
+#top-logo2 {
+  display: var(--logo-dark);
+}
+@media (max-width: 500px) {
+  #top-logo2 {
     display: none;
   }
 }
@@ -517,7 +530,8 @@ header .top-nav {
     flex-flow: column nowrap;
   }
 }
-#top-logo {
+#top-logo,
+#top-logo2 {
   width: 100px;
 }
 /*Simple css to style it like a toggle switch*/

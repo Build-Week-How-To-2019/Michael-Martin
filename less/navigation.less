@@ -109,7 +109,14 @@
 }
 
 #top-logo{
+  display: var(--logo-light);
+  @media @mobile{
+    display:none;
+  }
+}
 
+#top-logo2{
+  display: var(--logo-dark);
   @media @mobile{
     display:none;
   }

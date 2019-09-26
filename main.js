@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function(){
       document.documentElement.style.setProperty('--font-color-active',' #696e6d');
       document.documentElement.style.setProperty('--searchbar-bg', ' white');
       document.documentElement.style.setProperty('--searchbar-f', 'black');
+      document.documentElement.style.setProperty('--logo-dark', 'none');
+      document.documentElement.style.setProperty('--logo-light', 'inline');
       theme = 'dark';
 
     } else {
@@ -39,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function(){
       document.documentElement.style.setProperty('--font-color-active',' black');
       document.documentElement.style.setProperty('--searchbar-bg', ' #000000');
       document.documentElement.style.setProperty('--searchbar-f', ' #696e6d');
+      document.documentElement.style.setProperty('--logo-dark', 'inline');
+      document.documentElement.style.setProperty('--logo-light', 'none');
       theme = 'light';
     }
   });
